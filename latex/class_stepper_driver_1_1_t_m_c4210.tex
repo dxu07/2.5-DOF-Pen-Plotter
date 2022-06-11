@@ -1,0 +1,211 @@
+\hypertarget{class_stepper_driver_1_1_t_m_c4210}{}\doxysection{Stepper\+Driver.\+TMC4210 Class Reference}
+\label{class_stepper_driver_1_1_t_m_c4210}\index{StepperDriver.TMC4210@{StepperDriver.TMC4210}}
+
+
+A \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210}{TMC4210}} class.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210_a35b353f08db123fbf3cee210e2ba0a8f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, spi\+\_\+bus, cs, v\+\_\+max, a\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Initializes the \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210}{TMC4210}}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210_a763a58e64f661cba8276521fe703d56c}{rw\+\_\+value}} (self, rw, reg, data)
+\begin{DoxyCompactList}\small\item\em Handles reading and writing to registries. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210_afae5fd4d2ccd08e67ba5956b8755b24a}{set\+\_\+mode}} (self, mode)
+\begin{DoxyCompactList}\small\item\em Changes the mode in which the stepper motors are operating in. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210_aaabc524eadbc1b95d994d1b847aa7477}{set\+\_\+target\+\_\+position}} (self, pos)
+\begin{DoxyCompactList}\small\item\em Sets the target Position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210_aff8e935f1bc2eefd40f79f1db2460b08}{get\+\_\+target\+\_\+position}} (self)
+\begin{DoxyCompactList}\small\item\em Reads the target position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210_aba41586bc16565707ec7ddbd05cd34a0}{get\+\_\+actual\+\_\+position}} (self)
+\begin{DoxyCompactList}\small\item\em Reads the actual position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210_a7736cb18ed509cae0f77994ad76cbe7d}{is\+\_\+target\+\_\+reached}} (self)
+\begin{DoxyCompactList}\small\item\em checks to see if motor has reached the target position \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210_a5a030434c04cff4ddebc2882ae848b11}{set\+\_\+target\+\_\+velocity}} (self, v\+\_\+target)
+\begin{DoxyCompactList}\small\item\em Sets the target velocity. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210_aa76a55e92d74e7af5f1e36834a7963c3}{get\+\_\+target\+\_\+velocity}} (self)
+\begin{DoxyCompactList}\small\item\em Reads the target velocity. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210_acbec7d1777e460d1d3607145a09efadc}{get\+\_\+actual\+\_\+velocity}} (self)
+\begin{DoxyCompactList}\small\item\em Reads the actual velocity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_a52caa20405519db2682b6796591642a6}\label{class_stepper_driver_1_1_t_m_c4210_a52caa20405519db2682b6796591642a6}} 
+{\bfseries spi\+\_\+bus}
+\item 
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_a858d83c8658eb316fb2c744d6407a1a8}\label{class_stepper_driver_1_1_t_m_c4210_a858d83c8658eb316fb2c744d6407a1a8}} 
+{\bfseries cs}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210}{TMC4210}} class. 
+
+Objects of this class can be used to configure the \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210}{TMC4210}}. This involves reading and writing to its registries. ~\newline
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_a35b353f08db123fbf3cee210e2ba0a8f}\label{class_stepper_driver_1_1_t_m_c4210_a35b353f08db123fbf3cee210e2ba0a8f}} 
+\index{StepperDriver.TMC4210@{StepperDriver.TMC4210}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!StepperDriver.TMC4210@{StepperDriver.TMC4210}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+TMC4210.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{spi\+\_\+bus,  }\item[{}]{cs,  }\item[{}]{v\+\_\+max,  }\item[{}]{a\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Initializes the \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210}{TMC4210}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spi\+\_\+bus} & is the spi object created to interface with this peripheral \\
+\hline
+{\em cs} & is the chip select unique to the peripheral \\
+\hline
+{\em v\+\_\+max} & is the maximum velocity used for stepper motor speed control, in steps per unit time \\
+\hline
+{\em a\+\_\+max} & is the a maximum acceleration used for stepper motor speed control, in steps per (unit time)$^\wedge$2 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_aba41586bc16565707ec7ddbd05cd34a0}\label{class_stepper_driver_1_1_t_m_c4210_aba41586bc16565707ec7ddbd05cd34a0}} 
+\index{StepperDriver.TMC4210@{StepperDriver.TMC4210}!get\_actual\_position@{get\_actual\_position}}
+\index{get\_actual\_position@{get\_actual\_position}!StepperDriver.TMC4210@{StepperDriver.TMC4210}}
+\doxysubsubsection{\texorpdfstring{get\_actual\_position()}{get\_actual\_position()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+TMC4210.\+get\+\_\+actual\+\_\+position (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reads the actual position. 
+
+\begin{DoxyReturn}{Returns}
+d returns what the actual position is 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_acbec7d1777e460d1d3607145a09efadc}\label{class_stepper_driver_1_1_t_m_c4210_acbec7d1777e460d1d3607145a09efadc}} 
+\index{StepperDriver.TMC4210@{StepperDriver.TMC4210}!get\_actual\_velocity@{get\_actual\_velocity}}
+\index{get\_actual\_velocity@{get\_actual\_velocity}!StepperDriver.TMC4210@{StepperDriver.TMC4210}}
+\doxysubsubsection{\texorpdfstring{get\_actual\_velocity()}{get\_actual\_velocity()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+TMC4210.\+get\+\_\+actual\+\_\+velocity (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reads the actual velocity. 
+
+\begin{DoxyReturn}{Returns}
+d returns what the actual velocity is 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_aff8e935f1bc2eefd40f79f1db2460b08}\label{class_stepper_driver_1_1_t_m_c4210_aff8e935f1bc2eefd40f79f1db2460b08}} 
+\index{StepperDriver.TMC4210@{StepperDriver.TMC4210}!get\_target\_position@{get\_target\_position}}
+\index{get\_target\_position@{get\_target\_position}!StepperDriver.TMC4210@{StepperDriver.TMC4210}}
+\doxysubsubsection{\texorpdfstring{get\_target\_position()}{get\_target\_position()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+TMC4210.\+get\+\_\+target\+\_\+position (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reads the target position. 
+
+\begin{DoxyReturn}{Returns}
+d returns the data at the target position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_aa76a55e92d74e7af5f1e36834a7963c3}\label{class_stepper_driver_1_1_t_m_c4210_aa76a55e92d74e7af5f1e36834a7963c3}} 
+\index{StepperDriver.TMC4210@{StepperDriver.TMC4210}!get\_target\_velocity@{get\_target\_velocity}}
+\index{get\_target\_velocity@{get\_target\_velocity}!StepperDriver.TMC4210@{StepperDriver.TMC4210}}
+\doxysubsubsection{\texorpdfstring{get\_target\_velocity()}{get\_target\_velocity()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+TMC4210.\+get\+\_\+target\+\_\+velocity (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reads the target velocity. 
+
+\begin{DoxyReturn}{Returns}
+d returns the data at the target position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_a7736cb18ed509cae0f77994ad76cbe7d}\label{class_stepper_driver_1_1_t_m_c4210_a7736cb18ed509cae0f77994ad76cbe7d}} 
+\index{StepperDriver.TMC4210@{StepperDriver.TMC4210}!is\_target\_reached@{is\_target\_reached}}
+\index{is\_target\_reached@{is\_target\_reached}!StepperDriver.TMC4210@{StepperDriver.TMC4210}}
+\doxysubsubsection{\texorpdfstring{is\_target\_reached()}{is\_target\_reached()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+TMC4210.\+is\+\_\+target\+\_\+reached (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+checks to see if motor has reached the target position 
+
+\begin{DoxyReturn}{Returns}
+boolean of whether or not it has been met 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_a763a58e64f661cba8276521fe703d56c}\label{class_stepper_driver_1_1_t_m_c4210_a763a58e64f661cba8276521fe703d56c}} 
+\index{StepperDriver.TMC4210@{StepperDriver.TMC4210}!rw\_value@{rw\_value}}
+\index{rw\_value@{rw\_value}!StepperDriver.TMC4210@{StepperDriver.TMC4210}}
+\doxysubsubsection{\texorpdfstring{rw\_value()}{rw\_value()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+TMC4210.\+rw\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rw,  }\item[{}]{reg,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+
+
+Handles reading and writing to registries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rw} & is the instruction on whether to read or write \\
+\hline
+{\em reg} & is the registry to be accessed \\
+\hline
+{\em data} & is the data to be written to registry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+status returns the status of the registry 
+
+data is the data read from the registry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_afae5fd4d2ccd08e67ba5956b8755b24a}\label{class_stepper_driver_1_1_t_m_c4210_afae5fd4d2ccd08e67ba5956b8755b24a}} 
+\index{StepperDriver.TMC4210@{StepperDriver.TMC4210}!set\_mode@{set\_mode}}
+\index{set\_mode@{set\_mode}!StepperDriver.TMC4210@{StepperDriver.TMC4210}}
+\doxysubsubsection{\texorpdfstring{set\_mode()}{set\_mode()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+TMC4210.\+set\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mode }\end{DoxyParamCaption})}
+
+
+
+Changes the mode in which the stepper motors are operating in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & is the mode to be changed to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_aaabc524eadbc1b95d994d1b847aa7477}\label{class_stepper_driver_1_1_t_m_c4210_aaabc524eadbc1b95d994d1b847aa7477}} 
+\index{StepperDriver.TMC4210@{StepperDriver.TMC4210}!set\_target\_position@{set\_target\_position}}
+\index{set\_target\_position@{set\_target\_position}!StepperDriver.TMC4210@{StepperDriver.TMC4210}}
+\doxysubsubsection{\texorpdfstring{set\_target\_position()}{set\_target\_position()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+TMC4210.\+set\+\_\+target\+\_\+position (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pos }\end{DoxyParamCaption})}
+
+
+
+Sets the target Position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the position to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_stepper_driver_1_1_t_m_c4210_a5a030434c04cff4ddebc2882ae848b11}\label{class_stepper_driver_1_1_t_m_c4210_a5a030434c04cff4ddebc2882ae848b11}} 
+\index{StepperDriver.TMC4210@{StepperDriver.TMC4210}!set\_target\_velocity@{set\_target\_velocity}}
+\index{set\_target\_velocity@{set\_target\_velocity}!StepperDriver.TMC4210@{StepperDriver.TMC4210}}
+\doxysubsubsection{\texorpdfstring{set\_target\_velocity()}{set\_target\_velocity()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+TMC4210.\+set\+\_\+target\+\_\+velocity (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{v\+\_\+target }\end{DoxyParamCaption})}
+
+
+
+Sets the target velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\+\_\+target} & the velocity to be set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/pyb/\mbox{\hyperlink{_stepper_driver_8py}{Stepper\+Driver.\+py}}\end{DoxyCompactItemize}

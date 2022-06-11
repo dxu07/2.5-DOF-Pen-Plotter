@@ -1,0 +1,152 @@
+\hypertarget{_stepper_driver_8py}{}\doxysection{src/pyb/\+Stepper\+Driver.py File Reference}
+\label{_stepper_driver_8py}\index{src/pyb/StepperDriver.py@{src/pyb/StepperDriver.py}}
+
+
+This is a class program that interfaces with both the TMC2208 and the TMC4210.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c2208}{Stepper\+Driver.\+TMC2208}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c2208}{TMC2208}} driver class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210}{Stepper\+Driver.\+TMC4210}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210}{TMC4210}} class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_stepper_driver_1_1_stepper_driver}{Stepper\+Driver.\+Stepper\+Driver}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_stepper_driver_1_1_stepper_driver}{Stepper\+Driver}} class that interfaces both the \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c4210}{TMC4210}} and the \mbox{\hyperlink{class_stepper_driver_1_1_t_m_c2208}{TMC2208}} together. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{_stepper_driver_8py_aad208c6fb3f73864657e092fbbd2f253}{Stepper\+Driver.\+sign\+\_\+extend}} (val, width)
+\begin{DoxyCompactList}\small\item\em Handles sign extension the python way. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{_stepper_driver_8py_aa457cf9fc938cf2eed998ec246343d4c}{Stepper\+Driver.\+map\+\_\+range}} (v, x1, x2, y1, y2)
+\begin{DoxyCompactList}\small\item\em maps the range \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_acc325e02c530f9e181f3cde001eb71a2}\label{_stepper_driver_8py_acc325e02c530f9e181f3cde001eb71a2}} 
+int {\bfseries Stepper\+Driver.\+X\+\_\+\+TARGET} = 0x00
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a3ec537eddb3fa6adc7ed14146d58082a}\label{_stepper_driver_8py_a3ec537eddb3fa6adc7ed14146d58082a}} 
+int {\bfseries Stepper\+Driver.\+X\+\_\+\+ACTUAL} = 0x01
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_af773728dbdb6f189bb3ef291800ac535}\label{_stepper_driver_8py_af773728dbdb6f189bb3ef291800ac535}} 
+int {\bfseries Stepper\+Driver.\+V\+\_\+\+MIN} = 0x02
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a8e1620411bb69d2c9735ef73c15f86cb}\label{_stepper_driver_8py_a8e1620411bb69d2c9735ef73c15f86cb}} 
+int {\bfseries Stepper\+Driver.\+V\+\_\+\+MAX} = 0x03
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_ac7ebd0dcc71bc6d3fece202db7dd54ac}\label{_stepper_driver_8py_ac7ebd0dcc71bc6d3fece202db7dd54ac}} 
+int {\bfseries Stepper\+Driver.\+V\+\_\+\+TARGET} = 0x04
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a3b04dff2e72ad8a76ef3164a8fb0e095}\label{_stepper_driver_8py_a3b04dff2e72ad8a76ef3164a8fb0e095}} 
+int {\bfseries Stepper\+Driver.\+V\+\_\+\+ACTUAL} = 0x05
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a2d48ca4dab8f719c308ae02398eff61d}\label{_stepper_driver_8py_a2d48ca4dab8f719c308ae02398eff61d}} 
+int {\bfseries Stepper\+Driver.\+A\+\_\+\+MAX} = 0x06
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a03dcaedaa4a7cf9649726451da289aae}\label{_stepper_driver_8py_a03dcaedaa4a7cf9649726451da289aae}} 
+int {\bfseries Stepper\+Driver.\+A\+\_\+\+ACTUAL} = 0x07
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a6cf578b1185f1696259b9e49166b8168}\label{_stepper_driver_8py_a6cf578b1185f1696259b9e49166b8168}} 
+int {\bfseries Stepper\+Driver.\+PMUL\+\_\+\+PDIV} = 0x09
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a7954652c52f78170206a7bc74d70618e}\label{_stepper_driver_8py_a7954652c52f78170206a7bc74d70618e}} 
+int {\bfseries Stepper\+Driver.\+REFCONF\+\_\+\+RAMPMODE} = 0x0A
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a59a4860d02bb6dfa56ecad536816e29e}\label{_stepper_driver_8py_a59a4860d02bb6dfa56ecad536816e29e}} 
+int {\bfseries Stepper\+Driver.\+INTERRUPT\+\_\+\+MASK\+\_\+\+FLAGS} = 0x0B
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a002ff9b8b8dbb584f134ca7eaedefe5c}\label{_stepper_driver_8py_a002ff9b8b8dbb584f134ca7eaedefe5c}} 
+int {\bfseries Stepper\+Driver.\+PULSE\+\_\+\+RAMP\+\_\+\+DIV} = 0x0C
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a9042c7dbbcbfe919becacc734b9d7bc2}\label{_stepper_driver_8py_a9042c7dbbcbfe919becacc734b9d7bc2}} 
+int {\bfseries Stepper\+Driver.\+DX\+\_\+\+REF\+\_\+\+TOLERANCE} = 0x0D
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_acd846ab03b7c1641f0b9353f3bbd0f3f}\label{_stepper_driver_8py_acd846ab03b7c1641f0b9353f3bbd0f3f}} 
+int {\bfseries Stepper\+Driver.\+X\+\_\+\+LATCHED} = 0x0E
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a8123c42292738f7028eff814bca3f89c}\label{_stepper_driver_8py_a8123c42292738f7028eff814bca3f89c}} 
+int {\bfseries Stepper\+Driver.\+USTEP\+\_\+\+COUNT\+\_\+4210} = 0x0F
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a4ef6154ebde1c595ecd0d8817747d7fa}\label{_stepper_driver_8py_a4ef6154ebde1c595ecd0d8817747d7fa}} 
+int {\bfseries Stepper\+Driver.\+IF\+\_\+\+CONFIGURATION\+\_\+4210} = 0x34
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_aa4e3f7126a3f686ad7ef19d025bd3671}\label{_stepper_driver_8py_aa4e3f7126a3f686ad7ef19d025bd3671}} 
+int {\bfseries Stepper\+Driver.\+POS\+\_\+\+COMP\+\_\+4210} = 0x35
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a785129209d2331d535de7abfdfc066e5}\label{_stepper_driver_8py_a785129209d2331d535de7abfdfc066e5}} 
+int {\bfseries Stepper\+Driver.\+POS\+\_\+\+COMP\+\_\+\+INT\+\_\+4210} = 0x36
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a1856ba7ae92712bf0657eb66dc395a1e}\label{_stepper_driver_8py_a1856ba7ae92712bf0657eb66dc395a1e}} 
+int {\bfseries Stepper\+Driver.\+POWER\+\_\+\+DOWN} = 0x38
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_abf1f49098f07eabb2cf4269c5f0d56d9}\label{_stepper_driver_8py_abf1f49098f07eabb2cf4269c5f0d56d9}} 
+int {\bfseries Stepper\+Driver.\+TYPE\+\_\+\+VERSION} = 0x39
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_ab79de7c2dc86b4148d59020e4ac87eba}\label{_stepper_driver_8py_ab79de7c2dc86b4148d59020e4ac87eba}} 
+int {\bfseries Stepper\+Driver.\+REFERENCE\+\_\+\+SWITCHES} = 0x3E
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a4c409ad8e9e843640a8f46075c66a64f}\label{_stepper_driver_8py_a4c409ad8e9e843640a8f46075c66a64f}} 
+int {\bfseries Stepper\+Driver.\+GLOBAL\+\_\+\+PARAMETERS} = 0x3F
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a61689445fbd9091051eefb4253d499f4}\label{_stepper_driver_8py_a61689445fbd9091051eefb4253d499f4}} 
+int {\bfseries Stepper\+Driver.\+RAMP\+\_\+\+MODE} = 0b00
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_a61bc38b0000e29826073be88cca986fa}\label{_stepper_driver_8py_a61bc38b0000e29826073be88cca986fa}} 
+int {\bfseries Stepper\+Driver.\+SOFT\+\_\+\+MODE} = 0b01
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_aa384f775c1ab683f291f84c2cec3a683}\label{_stepper_driver_8py_aa384f775c1ab683f291f84c2cec3a683}} 
+int {\bfseries Stepper\+Driver.\+VELOCITY\+\_\+\+MODE} = 0b10
+\item 
+\mbox{\Hypertarget{_stepper_driver_8py_afd7f743fd3331b129859710fdadf1710}\label{_stepper_driver_8py_afd7f743fd3331b129859710fdadf1710}} 
+int {\bfseries Stepper\+Driver.\+HOLD\+\_\+\+MODE} = 0b11
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a class program that interfaces with both the TMC2208 and the TMC4210. 
+
+This program acts as the bridge between the microcontroll and the stepper motor drivers. This allows the mcu to send and read instructions from the stepper motor drivers. It has the capabilities of enabling the stepper motor drivers and handles the IC for the TMC4210. It is capable of changing the motor operating modes, set velocities, and positions.
+
+\begin{DoxyAuthor}{Author}
+Alex Radovan 
+
+Daniel Xu 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6/10/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_stepper_driver_8py_aa457cf9fc938cf2eed998ec246343d4c}\label{_stepper_driver_8py_aa457cf9fc938cf2eed998ec246343d4c}} 
+\index{StepperDriver.py@{StepperDriver.py}!map\_range@{map\_range}}
+\index{map\_range@{map\_range}!StepperDriver.py@{StepperDriver.py}}
+\doxysubsubsection{\texorpdfstring{map\_range()}{map\_range()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+map\+\_\+range (\begin{DoxyParamCaption}\item[{}]{v,  }\item[{}]{x1,  }\item[{}]{x2,  }\item[{}]{y1,  }\item[{}]{y2 }\end{DoxyParamCaption})}
+
+
+
+maps the range 
+
+\begin{DoxyReturn}{Returns}
+returns the mapped range 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_stepper_driver_8py_aad208c6fb3f73864657e092fbbd2f253}\label{_stepper_driver_8py_aad208c6fb3f73864657e092fbbd2f253}} 
+\index{StepperDriver.py@{StepperDriver.py}!sign\_extend@{sign\_extend}}
+\index{sign\_extend@{sign\_extend}!StepperDriver.py@{StepperDriver.py}}
+\doxysubsubsection{\texorpdfstring{sign\_extend()}{sign\_extend()}}
+{\footnotesize\ttfamily def Stepper\+Driver.\+sign\+\_\+extend (\begin{DoxyParamCaption}\item[{}]{val,  }\item[{}]{width }\end{DoxyParamCaption})}
+
+
+
+Handles sign extension the python way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & the value that needs to be sign extended \\
+\hline
+{\em width} & how long is value is \\
+\hline
+\end{DoxyParams}

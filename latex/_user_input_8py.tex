@@ -1,0 +1,57 @@
+\hypertarget{_user_input_8py}{}\doxysection{src/pyb/\+User\+Input.py File Reference}
+\label{_user_input_8py}\index{src/pyb/UserInput.py@{src/pyb/UserInput.py}}
+
+
+This program reads in commands from uart.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{_user_input_8py_ac618aa177289d7c819648188d63d9339}{User\+Input.\+task\+\_\+user\+\_\+input}} (queues, filename, paused, stopped)
+\begin{DoxyCompactList}\small\item\em This function reads the user input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_user_input_8py_a9fbfcc2fe8dbb30bbc9b9455c8b45a16}\label{_user_input_8py_a9fbfcc2fe8dbb30bbc9b9455c8b45a16}} 
+int {\bfseries User\+Input.\+MAX\+\_\+\+FILENAME} = 100
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This program reads in commands from uart. 
+
+This program reads commands from uart and parses them. The commands are sent in from the PC and then interpreted. The instructions are then sent to the other tasks accordingly.
+
+\begin{DoxyAuthor}{Author}
+Alex Radovan 
+
+Daniel Xu 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6/10/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_user_input_8py_ac618aa177289d7c819648188d63d9339}\label{_user_input_8py_ac618aa177289d7c819648188d63d9339}} 
+\index{UserInput.py@{UserInput.py}!task\_user\_input@{task\_user\_input}}
+\index{task\_user\_input@{task\_user\_input}!UserInput.py@{UserInput.py}}
+\doxysubsubsection{\texorpdfstring{task\_user\_input()}{task\_user\_input()}}
+{\footnotesize\ttfamily def User\+Input.\+task\+\_\+user\+\_\+input (\begin{DoxyParamCaption}\item[{}]{queues,  }\item[{}]{filename,  }\item[{}]{paused,  }\item[{}]{stopped }\end{DoxyParamCaption})}
+
+
+
+This function reads the user input. 
+
+This function reads the user input from uart and them provides necessary information to the other tasks. This includes direct commands, drawing commands, stopping, and resuming. 
+\begin{DoxyParams}{Parameters}
+{\em queues} & is the queue of positional data \\
+\hline
+{\em filename} & is the name of the hpgl file to be drawn \\
+\hline
+{\em paused} & is a boolean to check if the drawing task needs to pause \\
+\hline
+{\em stopped} & is the boolean to check if the stepper motors need to stop. \\
+\hline
+\end{DoxyParams}

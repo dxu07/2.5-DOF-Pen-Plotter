@@ -1,0 +1,148 @@
+\hypertarget{camera_8py}{}\doxysection{src/pc/camera.py File Reference}
+\label{camera_8py}\index{src/pc/camera.py@{src/pc/camera.py}}
+
+
+Program that runs on the PC to find and shoot at red targets.  
+
+
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{camera_8py_a5acd76ae9ef5c0e44e4d7db2279a1235}\label{camera_8py_a5acd76ae9ef5c0e44e4d7db2279a1235}} 
+{\bfseries camera.\+vc} = cv2.\+Video\+Capture(0)
+\item 
+\mbox{\Hypertarget{camera_8py_ae654c880bcc0111669d33bacc01c7c10}\label{camera_8py_ae654c880bcc0111669d33bacc01c7c10}} 
+int {\bfseries camera.\+wdth} = 900
+\item 
+\mbox{\Hypertarget{camera_8py_a233143f3d7bf8c6db07ae52da9bb3522}\label{camera_8py_a233143f3d7bf8c6db07ae52da9bb3522}} 
+int {\bfseries camera.\+higt} = wdth / 1920 $\ast$ 1080
+\item 
+\mbox{\Hypertarget{camera_8py_a16ba3e3f8bc1b169a4fb418ebd3ee7ca}\label{camera_8py_a16ba3e3f8bc1b169a4fb418ebd3ee7ca}} 
+int {\bfseries camera.\+x\+\_\+avg} = 0
+\item 
+\mbox{\Hypertarget{camera_8py_a19e173b7491d9083f8744cbe68b66281}\label{camera_8py_a19e173b7491d9083f8744cbe68b66281}} 
+int {\bfseries camera.\+y\+\_\+avg} = 0
+\item 
+\mbox{\Hypertarget{camera_8py_ac7029e7f4a17a80a380460380554dc28}\label{camera_8py_ac7029e7f4a17a80a380460380554dc28}} 
+int {\bfseries camera.\+polar} = 0
+\item 
+\mbox{\Hypertarget{camera_8py_a78bd719fd0dad63e225a6c50a29ba8e6}\label{camera_8py_a78bd719fd0dad63e225a6c50a29ba8e6}} 
+int {\bfseries camera.\+azimuth} = 0
+\item 
+\mbox{\Hypertarget{camera_8py_a053983ef65c191befa6b92298a3a3086}\label{camera_8py_a053983ef65c191befa6b92298a3a3086}} 
+list {\bfseries camera.\+x\+\_\+frame} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{camera_8py_a6058bf0e1399e4e14415bbf68c585cc6}\label{camera_8py_a6058bf0e1399e4e14415bbf68c585cc6}} 
+list {\bfseries camera.\+y\+\_\+frame} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{camera_8py_a8ed8f7256c3f32d459503666d7b7495e}\label{camera_8py_a8ed8f7256c3f32d459503666d7b7495e}} 
+int {\bfseries camera.\+on\+\_\+target} = 0
+\item 
+\mbox{\Hypertarget{camera_8py_af96b945e40bc45b2326994b634fb5206}\label{camera_8py_af96b945e40bc45b2326994b634fb5206}} 
+bool {\bfseries camera.\+new\+\_\+angle} = False
+\item 
+\mbox{\Hypertarget{camera_8py_a5b64142c0051da8c2aca117a363852b5}\label{camera_8py_a5b64142c0051da8c2aca117a363852b5}} 
+bool {\bfseries camera.\+fired} = False
+\item 
+\mbox{\Hypertarget{camera_8py_ae786332c50603ea3684134b4f8c340d5}\label{camera_8py_ae786332c50603ea3684134b4f8c340d5}} 
+int {\bfseries camera.\+i} = 1
+\item 
+\mbox{\Hypertarget{camera_8py_a7794c3c0579e081ea93d85c50f0d1b37}\label{camera_8py_a7794c3c0579e081ea93d85c50f0d1b37}} 
+int {\bfseries camera.\+x\+\_\+angle} = 75
+\item 
+\mbox{\Hypertarget{camera_8py_ad488a067a6f5af3dc6cf70c08781ae22}\label{camera_8py_ad488a067a6f5af3dc6cf70c08781ae22}} 
+int {\bfseries camera.\+y\+\_\+angle} = 47
+\item 
+\mbox{\Hypertarget{camera_8py_ac2d248feb89ce9c16964723a506b8728}\label{camera_8py_ac2d248feb89ce9c16964723a506b8728}} 
+int {\bfseries camera.\+x\+\_\+correction} = 2
+\item 
+\mbox{\Hypertarget{camera_8py_ac9acdd8617d028ca5a4ae0c565b03052}\label{camera_8py_ac9acdd8617d028ca5a4ae0c565b03052}} 
+int {\bfseries camera.\+y\+\_\+correction} = 2
+\item 
+\mbox{\Hypertarget{camera_8py_acd38962b13662f7eae3b317f26bd0d24}\label{camera_8py_acd38962b13662f7eae3b317f26bd0d24}} 
+{\bfseries camera.\+kernal} = np.\+ones((7, 7), \char`\"{}uint8\char`\"{})
+\item 
+\mbox{\Hypertarget{camera_8py_aea28605346b4ab03f51da392965c468a}\label{camera_8py_aea28605346b4ab03f51da392965c468a}} 
+{\bfseries camera.\+last\+Frame} = None
+\item 
+\mbox{\Hypertarget{camera_8py_a054f596ecc75cf9c6182226a0054df25}\label{camera_8py_a054f596ecc75cf9c6182226a0054df25}} 
+{\bfseries camera.\+red\+\_\+lower} = np.\+array(\mbox{[}136, 135, 130\mbox{]}, np.\+uint8)
+\item 
+\mbox{\Hypertarget{camera_8py_a59d4fe36dfb3476495474be76af288fa}\label{camera_8py_a59d4fe36dfb3476495474be76af288fa}} 
+{\bfseries camera.\+red\+\_\+upper} = np.\+array(\mbox{[}180, 255, 255\mbox{]}, np.\+uint8)
+\item 
+\mbox{\Hypertarget{camera_8py_a2ced82120932142b97e8787e5f99934c}\label{camera_8py_a2ced82120932142b97e8787e5f99934c}} 
+{\bfseries camera.\+rval} = False
+\item 
+\mbox{\Hypertarget{camera_8py_aac2cab15c621bfd199fe90a8b2a1b340}\label{camera_8py_aac2cab15c621bfd199fe90a8b2a1b340}} 
+{\bfseries camera.\+frame} = imutils.\+resize(frame, width=wdth)
+\item 
+\mbox{\Hypertarget{camera_8py_a56b7263a796b1eab0f2227658e694235}\label{camera_8py_a56b7263a796b1eab0f2227658e694235}} 
+int {\bfseries camera.\+flag} = 1
+\item 
+\mbox{\Hypertarget{camera_8py_ada3ab3f6384e644b194f33b15a181ebb}\label{camera_8py_ada3ab3f6384e644b194f33b15a181ebb}} 
+{\bfseries camera.\+hsv} = cv2.\+cvt\+Color(frame, cv2.\+COLOR\+\_\+\+BGR2\+HSV)
+\item 
+\mbox{\Hypertarget{camera_8py_aeece58828e790ab4e5e6f88dddbc4ce7}\label{camera_8py_aeece58828e790ab4e5e6f88dddbc4ce7}} 
+{\bfseries camera.\+gray} = cv2.\+cvt\+Color(frame, cv2.\+COLOR\+\_\+\+BGR2\+GRAY)
+\item 
+\mbox{\Hypertarget{camera_8py_ac492016c0cef95bbd069ece956ca06fb}\label{camera_8py_ac492016c0cef95bbd069ece956ca06fb}} 
+{\bfseries camera.\+frame\+Delta} = cv2.\+absdiff(last\+Frame, gray)
+\item 
+\mbox{\Hypertarget{camera_8py_a9dcb5266ab667fb84731342d1faa7386}\label{camera_8py_a9dcb5266ab667fb84731342d1faa7386}} 
+{\bfseries camera.\+thresh} = cv2.\+threshold(frame\+Delta, 25, 255, cv2.\+THRESH\+\_\+\+BINARY)\mbox{[}1\mbox{]}
+\item 
+\mbox{\Hypertarget{camera_8py_a44e601f4f036dafad139093af57afafc}\label{camera_8py_a44e601f4f036dafad139093af57afafc}} 
+{\bfseries camera.\+motion\+\_\+cnts} = cv2.\+find\+Contours(thresh.\+copy(), cv2.\+RETR\+\_\+\+EXTERNAL, cv2.\+CHAIN\+\_\+\+APPROX\+\_\+\+SIMPLE)
+\item 
+\mbox{\Hypertarget{camera_8py_a9aa3c1fa374a9d962c68a5b31e5e59a1}\label{camera_8py_a9aa3c1fa374a9d962c68a5b31e5e59a1}} 
+{\bfseries camera.\+mask} = cv2.\+in\+Range(hsv, red\+\_\+lower, red\+\_\+upper)
+\item 
+\mbox{\Hypertarget{camera_8py_a267cdb2b87381e556e2f36bdf5c14dfa}\label{camera_8py_a267cdb2b87381e556e2f36bdf5c14dfa}} 
+{\bfseries camera.\+contours}
+\item 
+\mbox{\Hypertarget{camera_8py_a7f68cb1e7479e93a24abedf07602fde8}\label{camera_8py_a7f68cb1e7479e93a24abedf07602fde8}} 
+{\bfseries camera.\+hierarchy}
+\item 
+\mbox{\Hypertarget{camera_8py_a73b65a5398492d61c09ac85d4e60cd02}\label{camera_8py_a73b65a5398492d61c09ac85d4e60cd02}} 
+{\bfseries camera.\+cnts} = np.\+concatenate(np.\+concatenate(contours))
+\item 
+\mbox{\Hypertarget{camera_8py_aa3388babb2d2bfa5b1fda6a8441e92b9}\label{camera_8py_aa3388babb2d2bfa5b1fda6a8441e92b9}} 
+list {\bfseries camera.\+x} = \mbox{[}x\mbox{[}0\mbox{]} for x in cnts\mbox{]}
+\item 
+\mbox{\Hypertarget{camera_8py_a44af55efa5f27b59e0bfadff527049e3}\label{camera_8py_a44af55efa5f27b59e0bfadff527049e3}} 
+list {\bfseries camera.\+y} = \mbox{[}y\mbox{[}1\mbox{]} for y in cnts\mbox{]}
+\item 
+\mbox{\Hypertarget{camera_8py_afa41913e2de81a963f5f13f74e5f13bc}\label{camera_8py_afa41913e2de81a963f5f13f74e5f13bc}} 
+tuple {\bfseries camera.\+x\+\_\+dist} = (x\+\_\+avg -\/ wdth/2)
+\item 
+\mbox{\Hypertarget{camera_8py_a6c025a35091be42f272249513b7563f6}\label{camera_8py_a6c025a35091be42f272249513b7563f6}} 
+tuple {\bfseries camera.\+y\+\_\+dist} = (y\+\_\+avg -\/ higt/2)
+\item 
+\mbox{\Hypertarget{camera_8py_a75cf08764d3de2df60f37550f90bdf5a}\label{camera_8py_a75cf08764d3de2df60f37550f90bdf5a}} 
+{\bfseries camera.\+dist} = np.\+sqrt(np.\+power(x\+\_\+dist, 2) + np.\+power(y\+\_\+dist, 2))
+\item 
+\mbox{\Hypertarget{camera_8py_ae47c453d473ae92dab32d9bd5dc7ee24}\label{camera_8py_ae47c453d473ae92dab32d9bd5dc7ee24}} 
+int {\bfseries camera.\+fire} = 1
+\item 
+\mbox{\Hypertarget{camera_8py_adf56cea83b27c7e83734b05973ea9393}\label{camera_8py_adf56cea83b27c7e83734b05973ea9393}} 
+string {\bfseries camera.\+instr} = \textquotesingle{}d\+:\textquotesingle{} + str(polar$\ast$-\/1) + \textquotesingle{},\textquotesingle{} + str(azimuth$\ast$-\/1) + \textquotesingle{},\textquotesingle{} + str(fire)
+\item 
+\mbox{\Hypertarget{camera_8py_a3ed85701db21515d412887931dc55187}\label{camera_8py_a3ed85701db21515d412887931dc55187}} 
+{\bfseries camera.\+key} = cv2.\+wait\+Key(20)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program that runs on the PC to find and shoot at red targets. 
+
+This program utilizes opencv to help detect red objects from the camera. Once run, it will constantly scan for red object and calculate the distance between the center of the screen to the red object. Then by knowing the field of view of the camera, a direct polar and azimuthal coordinate can be sent over. The program will only begin scanning for the red object when it detects that there is no motion. This allows for it to recalculate a new angle once the stepper motors have moved to a new point. The instruction are sent through serial to the MCU.
+
+\begin{DoxyAuthor}{Author}
+Alex Radovan 
+
+Daniel Xu 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02/23/2022 
+\end{DoxyDate}

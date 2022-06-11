@@ -1,0 +1,126 @@
+\hypertarget{class_nerf_driver_1_1_nerf}{}\doxysection{Nerf\+Driver.\+Nerf Class Reference}
+\label{class_nerf_driver_1_1_nerf}\index{NerfDriver.Nerf@{NerfDriver.Nerf}}
+
+
+Driver used to interface with our custom electronic hardware.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_nerf_driver_1_1_nerf_a18e5580c36c3ad62ebc606da86d62052}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, spool, trig, dart, num\+\_\+darts=15)
+\begin{DoxyCompactList}\small\item\em Initializes the NERF pyb elements. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_nerf_driver_1_1_nerf_afd8bd0687d521d1adcf8e151ad219d06}{dart\+\_\+callback}} (self, line)
+\begin{DoxyCompactList}\small\item\em callback if the dark has been fired ~\newline
+ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_nerf_driver_1_1_nerf_acd2cfe9f0770e8ebda69d0e612f648f1}{fire}} (self, stopped)
+\begin{DoxyCompactList}\small\item\em Controls the firing mechanism in the dart. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_nerf_driver_1_1_nerf_a46e8c2451e87275b943ca75d092b06ba}{reload}} (self, num\+\_\+darts=15)
+\begin{DoxyCompactList}\small\item\em resets the ammo count once the mag has been reloaded ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_nerf_driver_1_1_nerf_aaf1047d9006ab1d0c0f00c60ba9f8c47}\label{class_nerf_driver_1_1_nerf_aaf1047d9006ab1d0c0f00c60ba9f8c47}} 
+{\bfseries spool}
+\item 
+\mbox{\Hypertarget{class_nerf_driver_1_1_nerf_a06da29adc3d093ba41df33e077362ce5}\label{class_nerf_driver_1_1_nerf_a06da29adc3d093ba41df33e077362ce5}} 
+{\bfseries trig}
+\item 
+\mbox{\Hypertarget{class_nerf_driver_1_1_nerf_a8c1ead398aa92f1ae9079b3025d53a87}\label{class_nerf_driver_1_1_nerf_a8c1ead398aa92f1ae9079b3025d53a87}} 
+{\bfseries dart}
+\item 
+\mbox{\Hypertarget{class_nerf_driver_1_1_nerf_ae7f6363fb4c1efeec927afd9460130d4}\label{class_nerf_driver_1_1_nerf_ae7f6363fb4c1efeec927afd9460130d4}} 
+{\bfseries dart\+\_\+flag}
+\item 
+\mbox{\Hypertarget{class_nerf_driver_1_1_nerf_a4b6c5a9fec758102fd23c1091e7ba43e}\label{class_nerf_driver_1_1_nerf_a4b6c5a9fec758102fd23c1091e7ba43e}} 
+{\bfseries num\+\_\+darts}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Driver used to interface with our custom electronic hardware. 
+
+Objects of this class are used to control the firing mechanisms that are integrated within the nerf gun. This includes both the spooling and the trigger mechanisms. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_nerf_driver_1_1_nerf_a18e5580c36c3ad62ebc606da86d62052}\label{class_nerf_driver_1_1_nerf_a18e5580c36c3ad62ebc606da86d62052}} 
+\index{NerfDriver.Nerf@{NerfDriver.Nerf}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!NerfDriver.Nerf@{NerfDriver.Nerf}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Nerf\+Driver.\+Nerf.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{spool,  }\item[{}]{trig,  }\item[{}]{dart,  }\item[{}]{num\+\_\+darts = {\ttfamily 15} }\end{DoxyParamCaption})}
+
+
+
+Initializes the NERF pyb elements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spool} & is the pin that is associated with the spool up motor \\
+\hline
+{\em trig} & is the pin that is associated with the trigger motor \\
+\hline
+{\em dart} & is the pin that is associated the IR sensor that detects if the dart has been fired \\
+\hline
+{\em num\+\_\+darts} & defaults to 15, is the number of darts in the gun. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_nerf_driver_1_1_nerf_afd8bd0687d521d1adcf8e151ad219d06}\label{class_nerf_driver_1_1_nerf_afd8bd0687d521d1adcf8e151ad219d06}} 
+\index{NerfDriver.Nerf@{NerfDriver.Nerf}!dart\_callback@{dart\_callback}}
+\index{dart\_callback@{dart\_callback}!NerfDriver.Nerf@{NerfDriver.Nerf}}
+\doxysubsubsection{\texorpdfstring{dart\_callback()}{dart\_callback()}}
+{\footnotesize\ttfamily def Nerf\+Driver.\+Nerf.\+dart\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{line }\end{DoxyParamCaption})}
+
+
+
+callback if the dark has been fired ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & IRQ for callback ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_nerf_driver_1_1_nerf_acd2cfe9f0770e8ebda69d0e612f648f1}\label{class_nerf_driver_1_1_nerf_acd2cfe9f0770e8ebda69d0e612f648f1}} 
+\index{NerfDriver.Nerf@{NerfDriver.Nerf}!fire@{fire}}
+\index{fire@{fire}!NerfDriver.Nerf@{NerfDriver.Nerf}}
+\doxysubsubsection{\texorpdfstring{fire()}{fire()}}
+{\footnotesize\ttfamily def Nerf\+Driver.\+Nerf.\+fire (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{stopped }\end{DoxyParamCaption})}
+
+
+
+Controls the firing mechanism in the dart. 
+
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em stopped} & is boolean that determines if firing mechanism needs to stop. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_nerf_driver_1_1_nerf_a46e8c2451e87275b943ca75d092b06ba}\label{class_nerf_driver_1_1_nerf_a46e8c2451e87275b943ca75d092b06ba}} 
+\index{NerfDriver.Nerf@{NerfDriver.Nerf}!reload@{reload}}
+\index{reload@{reload}!NerfDriver.Nerf@{NerfDriver.Nerf}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily def Nerf\+Driver.\+Nerf.\+reload (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{num\+\_\+darts = {\ttfamily 15} }\end{DoxyParamCaption})}
+
+
+
+resets the ammo count once the mag has been reloaded ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+darts} & is the number of darts that has been added to magazine. Defaults to 15. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/pyb/\mbox{\hyperlink{_nerf_driver_8py}{Nerf\+Driver.\+py}}\end{DoxyCompactItemize}

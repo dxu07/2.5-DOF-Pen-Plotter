@@ -1,0 +1,94 @@
+\hypertarget{_positioning_8py}{}\doxysection{src/pyb/\+Positioning.py File Reference}
+\label{_positioning_8py}\index{src/pyb/Positioning.py@{src/pyb/Positioning.py}}
+
+
+This program handle the stepper motor driving and the firing of the nerf gun.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{_positioning_8py_aef8efe6a5f6d92212fb26326f008e7b5}{Positioning.\+is\+\_\+point}} (queues)
+\begin{DoxyCompactList}\small\item\em This function checks if there is anything in the queue. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{_positioning_8py_a91be0cd34ad274df1de56c927ee0fb51}{Positioning.\+unpack\+\_\+point}} (queues)
+\begin{DoxyCompactList}\small\item\em This function unpacks the points from the queues. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{_positioning_8py_a89501848608d73394cabdc6e8a9edd4c}{Positioning.\+task\+\_\+positioning}} (queues, paused, stopped)
+\begin{DoxyCompactList}\small\item\em This function is a task that controls the motors and the nerf gun. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This program handle the stepper motor driving and the firing of the nerf gun. 
+
+This program interacts directly with \mbox{\hyperlink{_positioning_8py}{Positioning.\+py}} and \mbox{\hyperlink{_nerf_driver_8py}{Nerf\+Driver.\+py}} to move and shoot the nerf gun. It takes in data from Process\+HPGL or commands from User\+Input to determine where to move the gun and if it should shoot.
+
+\begin{DoxyAuthor}{Author}
+Alex Radovan 
+
+Daniel Xu 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6/10/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_positioning_8py_aef8efe6a5f6d92212fb26326f008e7b5}\label{_positioning_8py_aef8efe6a5f6d92212fb26326f008e7b5}} 
+\index{Positioning.py@{Positioning.py}!is\_point@{is\_point}}
+\index{is\_point@{is\_point}!Positioning.py@{Positioning.py}}
+\doxysubsubsection{\texorpdfstring{is\_point()}{is\_point()}}
+{\footnotesize\ttfamily def Positioning.\+is\+\_\+point (\begin{DoxyParamCaption}\item[{}]{queues }\end{DoxyParamCaption})}
+
+
+
+This function checks if there is anything in the queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queues} & is the queue of data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a boolean of whether or not the queues are all empty. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_positioning_8py_a89501848608d73394cabdc6e8a9edd4c}\label{_positioning_8py_a89501848608d73394cabdc6e8a9edd4c}} 
+\index{Positioning.py@{Positioning.py}!task\_positioning@{task\_positioning}}
+\index{task\_positioning@{task\_positioning}!Positioning.py@{Positioning.py}}
+\doxysubsubsection{\texorpdfstring{task\_positioning()}{task\_positioning()}}
+{\footnotesize\ttfamily def Positioning.\+task\+\_\+positioning (\begin{DoxyParamCaption}\item[{}]{queues,  }\item[{}]{paused,  }\item[{}]{stopped }\end{DoxyParamCaption})}
+
+
+
+This function is a task that controls the motors and the nerf gun. 
+
+This function handles the SPI controlling of the stepper motors. It interfaces with the Stepper Driver to read and write commands to it. This allows it to control each motor independently. Additionally, it handles the firing of the nerf gun. ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em queues} & is the queue of shared data for positioning \\
+\hline
+{\em paused} & is the boolean determining whether the paused command has been sent \\
+\hline
+{\em stopped} & is the boolean determining whether the stopped command has been sent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_positioning_8py_a91be0cd34ad274df1de56c927ee0fb51}\label{_positioning_8py_a91be0cd34ad274df1de56c927ee0fb51}} 
+\index{Positioning.py@{Positioning.py}!unpack\_point@{unpack\_point}}
+\index{unpack\_point@{unpack\_point}!Positioning.py@{Positioning.py}}
+\doxysubsubsection{\texorpdfstring{unpack\_point()}{unpack\_point()}}
+{\footnotesize\ttfamily def Positioning.\+unpack\+\_\+point (\begin{DoxyParamCaption}\item[{}]{queues }\end{DoxyParamCaption})}
+
+
+
+This function unpacks the points from the queues. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queues} & is the queue of data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pp the polar position 
+
+aa the azimuthal position 
+
+ff the firing instructions 
+\end{DoxyReturn}

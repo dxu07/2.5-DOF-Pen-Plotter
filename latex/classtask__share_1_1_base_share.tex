@@ -1,0 +1,45 @@
+\hypertarget{classtask__share_1_1_base_share}{}\doxysection{task\+\_\+share.\+Base\+Share Class Reference}
+\label{classtask__share_1_1_base_share}\index{task\_share.BaseShare@{task\_share.BaseShare}}
+
+
+Base class for queues and shares which exchange data between tasks.  
+
+
+Inheritance diagram for task\+\_\+share.\+Base\+Share\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtask__share_1_1_base_share}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtask__share_1_1_base_share_aecdc98ad6b42e05f481cf3ffa5f72ad4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, type\+\_\+code, thread\+\_\+protect=True, name=None)
+\begin{DoxyCompactList}\small\item\em Create a base queue object when called by a child class initializer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for queues and shares which exchange data between tasks. 
+
+One should never create an object from this class; it doesn\textquotesingle{}t do anything useful. It exists to implement things which are common between its child classes {\ttfamily \mbox{\hyperlink{classtask__share_1_1_queue}{Queue}}} and {\ttfamily \mbox{\hyperlink{classtask__share_1_1_share}{Share}}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtask__share_1_1_base_share_aecdc98ad6b42e05f481cf3ffa5f72ad4}\label{classtask__share_1_1_base_share_aecdc98ad6b42e05f481cf3ffa5f72ad4}} 
+\index{task\_share.BaseShare@{task\_share.BaseShare}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!task\_share.BaseShare@{task\_share.BaseShare}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def task\+\_\+share.\+Base\+Share.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{type\+\_\+code,  }\item[{}]{thread\+\_\+protect = {\ttfamily True},  }\item[{}]{name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Create a base queue object when called by a child class initializer. 
+
+This method creates the things which queues and shares have in common. 
+
+Reimplemented in \mbox{\hyperlink{classtask__share_1_1_queue_a9b93f7ca745b59f404b3b92958ffe456}{task\+\_\+share.\+Queue}}, and \mbox{\hyperlink{classtask__share_1_1_share_a3139fd0c5d1df7fc15e003892d557b9a}{task\+\_\+share.\+Share}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/pyb/task/\mbox{\hyperlink{task__share_8py}{task\+\_\+share.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{pyb_2main_8py}{}\doxysection{src/pyb/main.py File Reference}
+\label{pyb_2main_8py}\index{src/pyb/main.py@{src/pyb/main.py}}
+
+
+This is the main program that connects all the different tasks together.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{pc_2main_8py_ab0a4a29a72200a5cf786f96fdab9a2bd}{main.\+main}} ()
+\begin{DoxyCompactList}\small\item\em This function writes commands to serial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{pyb_2main_8py_a99ad1d66e855c47d0514d7e578bcfb3c}\label{pyb_2main_8py_a99ad1d66e855c47d0514d7e578bcfb3c}} 
+{\bfseries main.\+filename} = \mbox{\hyperlink{classtask__share_1_1_queue}{task\+\_\+share.\+Queue}}(\textquotesingle{}B\textquotesingle{}, MAX\+\_\+\+FILENAME)
+\item 
+\mbox{\Hypertarget{pyb_2main_8py_a1a036d839d3e45436f2fd1a9017bd4c4}\label{pyb_2main_8py_a1a036d839d3e45436f2fd1a9017bd4c4}} 
+{\bfseries main.\+polar\+\_\+angle} = \mbox{\hyperlink{classtask__share_1_1_queue}{task\+\_\+share.\+Queue}}(\textquotesingle{}f\textquotesingle{}, 1)
+\item 
+\mbox{\Hypertarget{pyb_2main_8py_a9ce00e69379f79e066ff3a0914ce4d87}\label{pyb_2main_8py_a9ce00e69379f79e066ff3a0914ce4d87}} 
+{\bfseries main.\+azimuthal\+\_\+angle} = \mbox{\hyperlink{classtask__share_1_1_queue}{task\+\_\+share.\+Queue}}(\textquotesingle{}f\textquotesingle{}, 1)
+\item 
+\mbox{\Hypertarget{pyb_2main_8py_af8f4978a2d5223c375d1eda35732fac8}\label{pyb_2main_8py_af8f4978a2d5223c375d1eda35732fac8}} 
+{\bfseries main.\+fire} = \mbox{\hyperlink{classtask__share_1_1_queue}{task\+\_\+share.\+Queue}}(\textquotesingle{}B\textquotesingle{}, 1)
+\item 
+\mbox{\Hypertarget{pyb_2main_8py_aa00360060700710b7136785dc155889c}\label{pyb_2main_8py_aa00360060700710b7136785dc155889c}} 
+{\bfseries main.\+paused} = \mbox{\hyperlink{classtask__share_1_1_share}{task\+\_\+share.\+Share}}(\textquotesingle{}B\textquotesingle{})
+\item 
+\mbox{\Hypertarget{pyb_2main_8py_a2fbdb167876d47f8b10ab82574a2537c}\label{pyb_2main_8py_a2fbdb167876d47f8b10ab82574a2537c}} 
+{\bfseries main.\+stopped} = \mbox{\hyperlink{classtask__share_1_1_share}{task\+\_\+share.\+Share}}(\textquotesingle{}B\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the main program that connects all the different tasks together. 
+
+This utilizes the cotask to create a cooperative set of tasks for simulaneous actions. This means it takes in the usesr\+\_\+input task, the process\+\_\+hpgl task, and also the positioning task.
+
+\begin{DoxyAuthor}{Author}
+Alex Radovan 
+
+Daniel Xu 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6/10/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{pc_2main_8py_ab0a4a29a72200a5cf786f96fdab9a2bd}\label{pc_2main_8py_ab0a4a29a72200a5cf786f96fdab9a2bd}} 
+\index{main.py@{main.py}!main@{main}}
+\index{main@{main}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def main.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function writes commands to serial. 
+
+This function uses cotask to link all the tasks together. 
