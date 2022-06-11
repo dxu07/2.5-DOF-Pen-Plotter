@@ -9,5 +9,7 @@ var class_stepper_driver_1_1_t_m_c4210 =
     [ "rw_value", "class_stepper_driver_1_1_t_m_c4210.html#a763a58e64f661cba8276521fe703d56c", null ],
     [ "set_mode", "class_stepper_driver_1_1_t_m_c4210.html#afae5fd4d2ccd08e67ba5956b8755b24a", null ],
     [ "set_target_position", "class_stepper_driver_1_1_t_m_c4210.html#aaabc524eadbc1b95d994d1b847aa7477", null ],
-    [ "set_target_velocity", "class_stepper_driver_1_1_t_m_c4210.html#a5a030434c04cff4ddebc2882ae848b11", null ]
+    [ "set_target_velocity", "class_stepper_driver_1_1_t_m_c4210.html#a5a030434c04cff4ddebc2882ae848b11", null ],
+    [ "cs", "class_stepper_driver_1_1_t_m_c4210.html#a858d83c8658eb316fb2c744d6407a1a8", null ],
+    [ "spi_bus", "class_stepper_driver_1_1_t_m_c4210.html#a52caa20405519db2682b6796591642a6", null ]
 ];

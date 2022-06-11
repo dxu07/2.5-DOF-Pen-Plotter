@@ -1,0 +1,88 @@
+var namespaces_dup =
+[
+    [ "boot", "namespaceboot.html", null ],
+    [ "camera", "namespacecamera.html", [
+      [ "azimuth", "namespacecamera.html#a78bd719fd0dad63e225a6c50a29ba8e6", null ],
+      [ "cnts", "namespacecamera.html#a73b65a5398492d61c09ac85d4e60cd02", null ],
+      [ "contours", "namespacecamera.html#a267cdb2b87381e556e2f36bdf5c14dfa", null ],
+      [ "dist", "namespacecamera.html#a75cf08764d3de2df60f37550f90bdf5a", null ],
+      [ "fire", "namespacecamera.html#ae47c453d473ae92dab32d9bd5dc7ee24", null ],
+      [ "fired", "namespacecamera.html#a5b64142c0051da8c2aca117a363852b5", null ],
+      [ "flag", "namespacecamera.html#a56b7263a796b1eab0f2227658e694235", null ],
+      [ "frame", "namespacecamera.html#aac2cab15c621bfd199fe90a8b2a1b340", null ],
+      [ "frameDelta", "namespacecamera.html#ac492016c0cef95bbd069ece956ca06fb", null ],
+      [ "gray", "namespacecamera.html#aeece58828e790ab4e5e6f88dddbc4ce7", null ],
+      [ "hierarchy", "namespacecamera.html#a7f68cb1e7479e93a24abedf07602fde8", null ],
+      [ "higt", "namespacecamera.html#a233143f3d7bf8c6db07ae52da9bb3522", null ],
+      [ "hsv", "namespacecamera.html#ada3ab3f6384e644b194f33b15a181ebb", null ],
+      [ "i", "namespacecamera.html#ae786332c50603ea3684134b4f8c340d5", null ],
+      [ "instr", "namespacecamera.html#adf56cea83b27c7e83734b05973ea9393", null ],
+      [ "kernal", "namespacecamera.html#acd38962b13662f7eae3b317f26bd0d24", null ],
+      [ "key", "namespacecamera.html#a3ed85701db21515d412887931dc55187", null ],
+      [ "lastFrame", "namespacecamera.html#aea28605346b4ab03f51da392965c468a", null ],
+      [ "mask", "namespacecamera.html#a9aa3c1fa374a9d962c68a5b31e5e59a1", null ],
+      [ "motion_cnts", "namespacecamera.html#a44e601f4f036dafad139093af57afafc", null ],
+      [ "new_angle", "namespacecamera.html#af96b945e40bc45b2326994b634fb5206", null ],
+      [ "on_target", "namespacecamera.html#a8ed8f7256c3f32d459503666d7b7495e", null ],
+      [ "polar", "namespacecamera.html#ac7029e7f4a17a80a380460380554dc28", null ],
+      [ "red_lower", "namespacecamera.html#a054f596ecc75cf9c6182226a0054df25", null ],
+      [ "red_upper", "namespacecamera.html#a59d4fe36dfb3476495474be76af288fa", null ],
+      [ "rval", "namespacecamera.html#a2ced82120932142b97e8787e5f99934c", null ],
+      [ "thresh", "namespacecamera.html#a9dcb5266ab667fb84731342d1faa7386", null ],
+      [ "vc", "namespacecamera.html#a5acd76ae9ef5c0e44e4d7db2279a1235", null ],
+      [ "wdth", "namespacecamera.html#ae654c880bcc0111669d33bacc01c7c10", null ],
+      [ "x", "namespacecamera.html#aa3388babb2d2bfa5b1fda6a8441e92b9", null ],
+      [ "x_angle", "namespacecamera.html#a7794c3c0579e081ea93d85c50f0d1b37", null ],
+      [ "x_avg", "namespacecamera.html#a16ba3e3f8bc1b169a4fb418ebd3ee7ca", null ],
+      [ "x_correction", "namespacecamera.html#ac2d248feb89ce9c16964723a506b8728", null ],
+      [ "x_dist", "namespacecamera.html#afa41913e2de81a963f5f13f74e5f13bc", null ],
+      [ "x_frame", "namespacecamera.html#a053983ef65c191befa6b92298a3a3086", null ],
+      [ "y", "namespacecamera.html#a44af55efa5f27b59e0bfadff527049e3", null ],
+      [ "y_angle", "namespacecamera.html#ad488a067a6f5af3dc6cf70c08781ae22", null ],
+      [ "y_avg", "namespacecamera.html#a19e173b7491d9083f8744cbe68b66281", null ],
+      [ "y_correction", "namespacecamera.html#ac9acdd8617d028ca5a4ae0c565b03052", null ],
+      [ "y_dist", "namespacecamera.html#a6c025a35091be42f272249513b7563f6", null ],
+      [ "y_frame", "namespacecamera.html#a6058bf0e1399e4e14415bbf68c585cc6", null ]
+    ] ],
+    [ "cotask", "namespacecotask.html", "namespacecotask" ],
+    [ "demo", "namespacedemo.html", [
+      [ "demo", "namespacedemo.html#afe9d91f1ecf3de4372549cad34351a9e", null ]
+    ] ],
+    [ "main", "namespacemain.html", [
+      [ "main", "namespacemain.html#ab0a4a29a72200a5cf786f96fdab9a2bd", null ],
+      [ "azimuthal_angle", "namespacemain.html#a9ce00e69379f79e066ff3a0914ce4d87", null ],
+      [ "filename", "namespacemain.html#a99ad1d66e855c47d0514d7e578bcfb3c", null ],
+      [ "fire", "namespacemain.html#af8f4978a2d5223c375d1eda35732fac8", null ],
+      [ "paused", "namespacemain.html#aa00360060700710b7136785dc155889c", null ],
+      [ "polar_angle", "namespacemain.html#a1a036d839d3e45436f2fd1a9017bd4c4", null ],
+      [ "stopped", "namespacemain.html#a2fbdb167876d47f8b10ab82574a2537c", null ]
+    ] ],
+    [ "mainpage", "namespacemainpage.html", null ],
+    [ "NerfDriver", "namespace_nerf_driver.html", "namespace_nerf_driver" ],
+    [ "Positioning", "namespace_positioning.html", [
+      [ "is_point", "namespace_positioning.html#aef8efe6a5f6d92212fb26326f008e7b5", null ],
+      [ "task_positioning", "namespace_positioning.html#a89501848608d73394cabdc6e8a9edd4c", null ],
+      [ "unpack_point", "namespace_positioning.html#a91be0cd34ad274df1de56c927ee0fb51", null ]
+    ] ],
+    [ "ProcessesHPGL", "namespace_processes_h_p_g_l.html", [
+      [ "compute_steps", "namespace_processes_h_p_g_l.html#adebf7b246c8059995bccf555f60dfb32", null ],
+      [ "coords", "namespace_processes_h_p_g_l.html#a6e36459958a8aa2eb4b677d0033bb9f2", null ],
+      [ "dg_theta", "namespace_processes_h_p_g_l.html#a2aeab01d1e3c28f3345dfae10a98c049", null ],
+      [ "draw", "namespace_processes_h_p_g_l.html#a95aaa73e12a155685365b6e98d214978", null ],
+      [ "filter_hpgl", "namespace_processes_h_p_g_l.html#aef1fc18b596ebf397b2b50903ae5995b", null ],
+      [ "g", "namespace_processes_h_p_g_l.html#a532e834daec9ccea27e942cd2184d505", null ],
+      [ "newton_raphson", "namespace_processes_h_p_g_l.html#a2169795ae98ce2b40b8d0d5528016f5a", null ],
+      [ "sec", "namespace_processes_h_p_g_l.html#a351f4d2b9f41c5fad6beacaa57a9ac54", null ],
+      [ "sec2", "namespace_processes_h_p_g_l.html#ac6ddf7eb66cdbb79adebf4d9ab1191cf", null ],
+      [ "task_process_hpgl", "namespace_processes_h_p_g_l.html#acd9bb8c7244deb3d89afd78f51579a99", null ],
+      [ "d", "namespace_processes_h_p_g_l.html#a29232128945517681cdab3540927c642", null ],
+      [ "h", "namespace_processes_h_p_g_l.html#a862bea4c35fa1457440675a7470cb44b", null ],
+      [ "l", "namespace_processes_h_p_g_l.html#a0daa643d7e45130a2c16dfaed1657d0b", null ]
+    ] ],
+    [ "StepperDriver", "namespace_stepper_driver.html", "namespace_stepper_driver" ],
+    [ "task_share", "namespacetask__share.html", "namespacetask__share" ],
+    [ "UserInput", "namespace_user_input.html", [
+      [ "task_user_input", "namespace_user_input.html#ac618aa177289d7c819648188d63d9339", null ],
+      [ "MAX_FILENAME", "namespace_user_input.html#a9fbfcc2fe8dbb30bbc9b9455c8b45a16", null ]
+    ] ]
+];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['camera_2epy_0',['camera.py',['../camera_8py.html',1,'']]],
-  ['cotask_2epy_1',['cotask.py',['../cotask_8py.html',1,'']]]
+  ['boot_2epy_0',['boot.py',['../boot_8py.html',1,'']]]
 ];

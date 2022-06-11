@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('_user_input_8py.html',''); initResizab
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">UserInput.py File Reference</div></div>
@@ -92,16 +93,20 @@ $(document).ready(function(){initNavTree('_user_input_8py.html',''); initResizab
 <p>This program reads in commands from uart.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespace_user_input"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_user_input.html">UserInput</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac618aa177289d7c819648188d63d9339"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_user_input_8py.html#ac618aa177289d7c819648188d63d9339">UserInput.task_user_input</a> (queues, filename, paused, stopped)</td></tr>
-<tr class="memdesc:ac618aa177289d7c819648188d63d9339"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function reads the user input.  <a href="_user_input_8py.html#ac618aa177289d7c819648188d63d9339">More...</a><br /></td></tr>
+<tr class="memitem:ac618aa177289d7c819648188d63d9339"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_user_input.html#ac618aa177289d7c819648188d63d9339">UserInput.task_user_input</a> (queues, filename, paused, stopped)</td></tr>
+<tr class="memdesc:ac618aa177289d7c819648188d63d9339"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function reads the user input.  <a href="namespace_user_input.html#ac618aa177289d7c819648188d63d9339">More...</a><br /></td></tr>
 <tr class="separator:ac618aa177289d7c819648188d63d9339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a9fbfcc2fe8dbb30bbc9b9455c8b45a16"><td class="memItemLeft" align="right" valign="top"><a id="a9fbfcc2fe8dbb30bbc9b9455c8b45a16" name="a9fbfcc2fe8dbb30bbc9b9455c8b45a16"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>UserInput.MAX_FILENAME</b> = 100</td></tr>
+<tr class="memitem:a9fbfcc2fe8dbb30bbc9b9455c8b45a16"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_user_input.html#a9fbfcc2fe8dbb30bbc9b9455c8b45a16">UserInput.MAX_FILENAME</a> = 100</td></tr>
 <tr class="separator:a9fbfcc2fe8dbb30bbc9b9455c8b45a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -111,59 +116,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>UserInput.MAX_FILENAME
 <dd>
 Daniel Xu </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>6/10/2022 </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="ac618aa177289d7c819648188d63d9339" name="ac618aa177289d7c819648188d63d9339"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac618aa177289d7c819648188d63d9339">&#9670;&nbsp;</a></span>task_user_input()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def UserInput.task_user_input </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>queues</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>paused</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>stopped</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function reads the user input. </p>
-<p >This function reads the user input from uart and them provides necessary information to the other tasks. This includes direct commands, drawing commands, stopping, and resuming. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">queues</td><td>is the queue of positional data </td></tr>
-    <tr><td class="paramname">filename</td><td>is the name of the hpgl file to be drawn </td></tr>
-    <tr><td class="paramname">paused</td><td>is a boolean to check if the drawing task needs to pause </td></tr>
-    <tr><td class="paramname">stopped</td><td>is the boolean to check if the stepper motors need to stop. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -39,6 +39,14 @@ var NAVTREE =
       [ "Calculations", "index.html#sec_calcs", null ],
       [ "Task Diagram                                <br>", "index.html#sec_task", null ]
     ] ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -57,7 +65,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_nerf_driver_8py.html"
+"_nerf_driver_8py.html",
+"classtask__share_1_1_queue.html#aeac8766461d55d5717dd79fede402007"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
