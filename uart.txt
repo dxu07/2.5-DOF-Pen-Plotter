@@ -1,0 +1,27 @@
+d:0.0,0.0,0 (polar, azimuthal, fire?)
+
+f:xyz.hpgl
+	p:finished drawing
+	h
+
+u:abc.hpgl
+binary data
+u:abc.hpgl
+
+p (pause)
+r (resume)
+e (stop)
+h (home)
+c (calibrate)
+
+reload:
+to pc -> p:out of ammo, please reload...
+to mcu -> r
+	-> re-calibrate, continue
+
+jam:
+to pc -> p:jammed
+to mcu -> r
+	-> re-calibrate, continue
+
+x:error message
