@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="sec_intro"></a>
 Introduction</h1>
-<p >For this project, we designed a 2.5 DOF Nerf Gun pen plotter that uses nerf darts to draw pictures on a white board. This plotter utilizes Nucleo STM32476 microcontroller that interfaces with the TMC4210 serial interface IC and the TMC2208 stepper driver, which we used to control our stepper motors. Commands for specific tasks were sent from our PC to the MCU through serial/uart. In the following sections, we will discuss some of the features of the of the Nerf Gun Pen Plotter. Code specific details can be found in the code documentation.</p>
+<p >For this project, we designed a 2.5 DOF Nerf Gun pen plotter that uses nerf darts to draw pictures on a white board. This plotter utilizes Nucleo STM32476 microcontroller that interfaces with the TMC4210 serial interface IC and the TMC2208 stepper driver, which we used to control our stepper motors. Commands to for specific tasks were sent from our PC to the MCU through serial/uart. In the following sections, we will discuss some of the features of the of the Nerf Gun Pen Plotter. Code specific details can be found in the code documentation.</p>
 <div class="image">
 <img src="nerf_profile.jpg" style="max-width: 35%;" alt=""/>
 <div class="caption">
@@ -142,7 +142,7 @@ CAD Design</h2>
 <img src="CAD.png" style="max-width: 60%;"alt=""/>
 <div class="caption">
 Figure 5: CAD of the Nerf Gun Turret Assembly</div></div>
-<p >The nerf gun fits in between the two supports. The horizontal and vertical sliders are designed so that the center of gravity of the gun can be found. This helps with the stepper motor control because it needs less torque to move the gun. We found that by having the supports hold the gun at the center of gravity, the stepper motors were less likely to skip steps or fail in holding. <br  />
+<p >The nerf gun fits in between the two supports. The horizontal and vertical sliders are designed so that the center of gravity of the gun can be found. This help with the stepper motor control so that less torque is needed to move the gun. We found that by having the supports hold the gun at the center of gravity, the stepper motors were less likely to skip steps or fail in holding. <br  />
  The CAD is also designed to interface with two NEMA 17 stepper motors. These are 4-wire, bi-polar stepper motors. One of the NEMA 17 motors fits onto the top of the side supports to interface with the nerf gun of azimuthal direction control. The other NEMA 17 motor connects the bottom plate and the top plate for polar direction control.</p>
 <h1><a class="anchor" id="sec_elecdesign"></a>
 Electrical Design</h1>
@@ -186,7 +186,7 @@ Figure 11: Kinematics Equations</div></div>
 <p >Details on how the equations are used can be found in our source code documentation.</p>
 <h1><a class="anchor" id="sec_task"></a>
 Task Diagram </h1>
-<p >In order to run our code, we utilized a cooperative task schedular in the microcontroller. Data is shared between different tasks so that our robot can simultaneously move, calculate coordinates, and receive commands. Because all of our code only consisted of two states (initialization and operation), we did not feel the need to include a state transition diagram. For the tasks that are present however, we have attached a task diagram of this process below.</p>
+<p >In order to run our code, we utilized a cooperative task schedular in the microcontroller. Data is shared between different tasks so that our program can simultaneously move, calculate coordinates, and receive commands. A task diagram this process is shown below.</p>
 <div class="image">
 <img src="task_diagram.png"style="max-width: 60%;" alt=""/>
 <div class="caption">
